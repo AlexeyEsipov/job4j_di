@@ -1,8 +1,8 @@
 FROM maven:3.6.3-openjdk-17
 
-RUN mkdir job4j_springdi
+RUN mkdir job4j_di
 
-WORKDIR job4j_springdi
+WORKDIR job4j_di
 
 COPY . .
 

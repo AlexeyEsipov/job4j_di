@@ -8,12 +8,8 @@ public class SpringDI {
         context.scan("ru.job4j.di");
         context.refresh();
         StartUI ui = context.getBean(StartUI.class);
-        ConsoleInput ci = context.getBean(ConsoleInput.class);
         ui.add("Petr Arsentev");
         ui.add("Ivan ivanov");
-        String name = ci.askStr("Hi, please enter your name:");
-        ui.add(name);
         ui.print();
-
     }
 }
